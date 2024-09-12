@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <h1>Avinash's calculator</h1>
+    <div class="calculator">
+        <div class="box">
+    
+    <input type="text" id="re" placeholder="0"><br><br><br>
+</div>
+    <div class="buttons">
+        <button onclick="insertValue('1')">1</button>
+        <button onclick="insertValue('2')">2</button>
+        <button onclick="insertValue('3')">3</button>
+        <button onclick="insertValue('%')">%</button>
+        <button onclick="clearEntry()">C</button>
+        <button onclick="clearAll()">AC</button><br><br>
+        <button onclick="insertValue('4')">4</button>
+        <button onclick="insertValue('5')">5</button>
+        <button onclick="insertValue('6')">6</button>
+        <button onclick="insertValue('+')">+</button>
+        <button onclick="insertValue('-')">-</button>
+        <button onclick="insertValue('*')">X</button><br><br>
+        <button onclick="insertValue('7')">7</button>
+        <button onclick="insertValue('8')">8</button>
+        <button onclick="insertValue('9')">9</button>
+        <button onclick="insertValue('0')">0</button>
+       
+        <button onclick="insertValue('/')">/</button>
+        <button onclick="calculate()">=</button>
+    </div>
+</div>
+<button class="ht" onclick="uu()">click here</button>
+
+
+
+<style>
+    
+        body {
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            min-height: 100vh;
+            background-image: url(https://th.bing.com/th/id/OIP.bBBBvFHmafq2cn3Ejhe5YgHaEX?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+           
+    }
+    h1{
+        text-align: center;
+
+    }
+    .calculator{
+        border: 1px solid black;
+        
+        border-collapse: collapse;
+        padding: 10px;
+        overflow: hidden;
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-width: 5px;
+        animation: fadeIn 1s ease-in-out;
+        background-color: lightgrey;
+        resize: vertical;
+        margin: auto;
+        margin-top: 50px;
+        height: 360px;
+        
+    }
+    
+    .buttons{
+        padding: 10px;
+        background-color: lightgreen;
+        
+    }
+    .buttons button {
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            transition: transform 0.2s, background-color 0.2s;
+            background-color: pink;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            
+    }
+    .box input {
+    height: 50px;
+    width: 300px;
+    border: 1px solid black; 
+    border-radius: 10px; 
+    }
+
+
+        
+
+        
+    
+    .box{
+        background-color: lightblue;
+        padding: 20px;
+    }
+    .buttons button:hover{
+        transform: scale(0.8);
+        background-color: yellow;
+    }
+    .buttons button:active{
+        transform: scale(0.9);
+        background-color: yellow;
+    }
+    @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .ht{
+            border: none;
+        }
+
+    
+</style>
+</html>
+
+<script src="calculator.js"></script>
